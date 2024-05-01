@@ -1,0 +1,97 @@
+{
+  "name": "vue-multi-drag",
+  "description": "Drag'n'Drop with multiple Elements. Provides a vue directive for draggable element and a vue directive for dropzones.",
+  "bugs": {
+    "url": "https://github.com/mszkb/vue-multi-drag/issues",
+    "email": "mszkb@skca.eu"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/mszkb/vue-multi-drag"
+  },
+  "keywords": [
+    "drag",
+    "drop",
+    "drag and drop",
+    "vue",
+    "vue drag and drop",
+    "vue directive",
+    "no dependency"
+  ],
+  "author": "mszkb",
+  "license": "ISC",
+  "version": "0.3.2",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "demo": "vue-cli-service demo",
+    "docs": "npm run docs:serve",
+    "docs:build": "vue-cli-service docs --mode build",
+    "docs:serve": "vue-cli-service docs --mode serve",
+    "prepublish": "vue-cli-service lint && vue-cli-service docs --mode build && vue-cli-service build",
+    "start": "vue-cli-service serve"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.5.0",
+    "@vue/cli-plugin-eslint": "^3.5.0",
+    "@vue/cli-service": "^3.5.0",
+    "@vue/eslint-config-prettier": "^4.0.1",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "vue-cli-plugin-p11n": "^0.2.0",
+    "vue-template-compiler": "^2.5.21",
+    "vue": "^2.6.6"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential"
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "no-console": "off",
+      "semi": [
+        "error",
+        "never"
+      ]
+    },
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "files": [
+    "dist/vue-multi-drag.common.js",
+    "dist/vue-multi-drag.umd.min.js",
+    "dist/vue-multi-drag.umd.js",
+    "dist/vue-multi-drag.esm.js",
+    "src"
+  ],
+  "jsdelivr": "dist/vue-multi-drag.umd.min.js",
+  "main": "dist/vue-multi-drag.common.js",
+  "module": "dist/vue-multi-drag.esm.js",
+  "sideeffects": false,
+  "unpkg": "dist/vue-multi-drag.umd.min.js"
+}
